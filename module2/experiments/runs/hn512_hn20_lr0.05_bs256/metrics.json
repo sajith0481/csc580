@@ -1,0 +1,14 @@
+{
+  "params": {
+    "epochs": 15,
+    "batch_size": 256,
+    "learning_rate": 0.05,
+    "hidden_nodes": 512,
+    "hidden_nodes2": 0,
+    "seed": 42,
+    "save_dir": "C:\\Users\\sajit\\Desktop\\git\\csc580\\module2\\experiments\\runs\\hn512_hn20_lr0.05_bs256"
+  },
+  "final_test_accuracy": 0.9577999711036682,
+  "misclassified_count": 422,
+  "timestamp": "2025-08-24 10:14:33.982768"
+}
