@@ -1,0 +1,4 @@
+Linear Regression Results (TensorFlow v1-style)
+Training cost: 0.006023
+W: 0.996916
+b: 0.000081
