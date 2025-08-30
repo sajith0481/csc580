@@ -1,0 +1,22 @@
+Linear Regression Using TensorFlow – Introduction
+Generated on 2024-12-19 14:30
+Overview
+This assignment implements a simple linear regression model using TensorFlow. Synthetic linear data with noise is generated (y = 2x + 3 + uniform noise), then normalized to prevent numerical instability. A TensorFlow v1-style computation graph is built with placeholders for inputs (X, Y), trainable parameters (W, b), and an optimizer (SGD) to minimize MSE. The model is trained for 1000 epochs with learning_rate=0.0001, and the final cost, weight, and bias are reported.
+
+Inputs and Outputs
+Inputs: 50 synthetic (x, y) data points formed from a linear trend (y = 2x + 3) with added uniform noise in range [-4, 4], then normalized using z-score normalization. Outputs: Final training cost, learned weight (W), and bias (b). Two plots are produced: a scatter plot of the normalized training data and a line plot showing the fitted regression line over the data.
+
+How to Run
+1. Ensure Python 3.8+, TensorFlow (2.x OK with tf.compat.v1), NumPy, and Matplotlib are installed.
+2. Run `python linear_regression_tf1.py`.
+3. The script prints training progress every 100 epochs and final results to console, and saves final cost, W, and b to `results.txt`.
+4. The plots `training_data.png` and `fitted_line.png` are saved in the same directory.
+
+What to Submit
+Submit this introduction (edited with your name/course info), your Python code, and screenshots of your plots as a zip archive. You may also include the PNGs directly.
+
+Technical Notes
+- Uses TensorFlow 1.x compatibility mode (tf.compat.v1) for placeholder/session semantics
+- Fixed random seeds (numpy=101, tensorflow=101) for reproducible results
+- Data normalization prevents numerical instability during training
+- Learning rate reduced to 0.0001 for stable convergence
