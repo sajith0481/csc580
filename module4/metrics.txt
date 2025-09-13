@@ -1,0 +1,3 @@
+Tox21 NN (first task)
+Validation accuracy: 0.9591
+Test accuracy: 0.9592
